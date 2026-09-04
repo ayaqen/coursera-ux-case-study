@@ -1,0 +1,9 @@
+{
+  "pid": 62738,
+  "port": 54468,
+  "token": "8fc57af2-29e2-41d9-8c64-d749f2d9acff",
+  "startedAt": "2026-09-04T20:10:53.214Z",
+  "serverPath": "/Users/mac/.claude/skills/gstack/browse/src/server.ts",
+  "mode": "launched",
+  "configHash": "303a7eeccc03078b"
+}

@@ -1,0 +1,363 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coursera.org UX Case Study</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-layer" id="bgLayer" aria-hidden="true">
+  <div class="blob blob-sky"></div>
+  <div class="blob blob-mint"></div>
+  <div class="blob blob-peach"></div>
+  <div class="blob blob-lemon"></div>
+  <div class="blob blob-aqua"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<div class="progress-track" aria-hidden="true">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<header class="chrome-header">
+  <button class="brand glass" id="brandBtn" type="button">Coursera.org case study</button>
+</header>
+
+<nav class="dot-nav glass" id="dotNav" aria-label="Slide navigation"></nav>
+
+<div class="counter glass" id="counter" aria-hidden="true">01 / 11</div>
+
+<button class="next-btn" id="nextBtn" type="button">Next ↓</button>
+
+<main id="slides">
+
+  <section class="slide" id="hero" data-name="Start">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow" data-reveal>UX research case study &middot; Build Fellowship 2026</p>
+        <h1 data-reveal>Finding a course on Coursera should be easy. Is it?</h1>
+        <p class="lead" data-reveal>A heuristic review and a usability test of coursera.org, done by a college student, with college students.</p>
+        <p class="byline" data-reveal>Ayub Sanchez Yaqen &middot; September 2026</p>
+        <div class="btn-row" data-reveal>
+          <button class="btn btn-primary" id="startBtn" type="button">Start</button>
+          <button class="btn btn-ghost" id="jumpBtn" type="button">Jump to findings</button>
+        </div>
+      </div>
+      <div class="hero-shot-wrap" data-reveal>
+        <figure class="shot-frame tilt-hero" tabindex="0">
+          <div class="shot-bar"><span></span><span></span><span></span></div>
+          <div class="shot-img-wrap">
+            <img src="assets/shots/search-results.png" data-fallback="assets/hr-search.jpg" alt="Coursera search results for data analytics" loading="lazy">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="product" data-name="The product">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>The project</p>
+      <h2 data-reveal>Why Coursera</h2>
+      <div class="card-row">
+        <article class="card" data-reveal>
+          <h3>Why I picked it</h3>
+          <p>I use Coursera. When a skill I need is not in my classes, this is where I end up. It is also a product where the choice you make costs real money and real time, so a confusing page is not a small thing.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>What it does and who uses it</h3>
+          <p>Coursera hosts online courses, Specializations, Professional Certificates and degrees from universities and companies like Google and IBM. People search for a topic, compare options and enroll. Watching is often free. Certificates usually cost money or a Coursera Plus subscription. It is used by students, career changers and employees whose company pays. I focused on college students who want a career-related skill.</p>
+        </article>
+      </div>
+      <div class="stat-row">
+        <div class="card stat-pill" data-reveal>
+          <span class="stat-num" data-count="3754264">0</span>
+          <span class="stat-label">people enrolled in one Google certificate alone</span>
+        </div>
+        <div class="card stat-pill" data-reveal>
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">product types a student has to tell apart</span>
+        </div>
+        <div class="card stat-pill" data-reveal>
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">tasks in the usability test</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="users" data-name="Users and goals">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>Who and why</p>
+      <h2 data-reveal>The user, the top tasks, and what Coursera wants</h2>
+      <div class="card-row card-row-three">
+        <article class="card" data-reveal>
+          <h3>Target user</h3>
+          <p>A college student, or someone who was in college in the last year, who wants to learn a new skill for school, work or a career.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Top tasks</h3>
+          <ul class="task-list">
+            <li>Search for a topic</li>
+            <li>Filter by level, duration or product type</li>
+            <li>Compare a course with a certificate</li>
+            <li>Check cost, level, schedule and time</li>
+            <li>Start enrolling</li>
+          </ul>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Business goal</h3>
+          <p>Coursera earns when someone enrolls and pays, per certificate or through Coursera Plus. Every moment a student is unsure what is free, what costs money, or which option is which, is a moment Coursera can lose the sale or the trust.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="questions" data-name="Research questions">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>What I wanted to learn</p>
+      <h2 data-reveal>Three questions</h2>
+      <div class="card-row card-row-three">
+        <article class="card num-card" data-reveal>
+          <span class="num-card-digit">1</span>
+          <p>Can a student find a beginner-friendly course on a topic they actually want to learn?</p>
+        </article>
+        <article class="card num-card" data-reveal>
+          <span class="num-card-digit">2</span>
+          <p>Do they understand the difference between a standalone course, a Specialization and a Professional Certificate?</p>
+        </article>
+        <article class="card num-card" data-reveal>
+          <span class="num-card-digit">3</span>
+          <p>How easy is it to filter, compare, check the cost and time, and start enrolling?</p>
+        </article>
+      </div>
+      <p class="footline" data-reveal>These are the steps between a student and actually learning something. When they break, the student gives up or pays for the wrong thing.</p>
+    </div>
+  </section>
+
+  <section class="slide" id="methods" data-name="Methods">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>What I did</p>
+      <h2 data-reveal>Two methods, one topic</h2>
+      <div class="card-row">
+        <article class="card" data-reveal>
+          <h3>Heuristic review</h3>
+          <p class="card-meta">August 2026 &middot; Nielsen's 10 usability heuristics</p>
+          <p>I walked through coursera.org the way a student would, searching for data analytics, opening courses, and trying to enroll. At each step I checked the screen against the ten heuristics and noted where it broke one.</p>
+        </article>
+        <article class="card" data-reveal>
+          <h3>Usability test</h3>
+          <p class="card-meta">Unmoderated &middot; think-aloud &middot; Lookback &middot; 4 participants</p>
+          <p>Participants opened coursera.org on their own computer and worked through five tasks while talking out loud. After each task they rated how easy it was from 1 to 10. At the end they answered four short questions.</p>
+        </article>
+      </div>
+      <div class="card strip" data-reveal>
+        <h4>Who took part</h4>
+        <div class="pill-row">
+          <span class="pill">Current college student, or in college within the past year</span>
+          <span class="pill">Has searched for a class or learning resource online before</span>
+          <span class="pill">Wants to learn a new skill for school, work or career</span>
+        </div>
+        <p class="strip-line">Recruited through classmates, friends and student groups.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="task-evolution" data-name="Before and after">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>How the tasks changed</p>
+      <h2 data-reveal>My first task list did not survive review</h2>
+      <div class="card-row">
+        <article class="card" data-reveal>
+          <h3>First draft</h3>
+          <p class="card-meta">Five lines on one screen</p>
+          <ul class="task-list">
+            <li>Search for a topic on Coursera</li>
+            <li>Filter results by level, duration or learning product</li>
+            <li>Compare course and certificate options</li>
+            <li>Review the cost, level, schedule and time commitment</li>
+            <li>Begin enrollment for a selected course</li>
+          </ul>
+        </article>
+        <article class="card" data-reveal>
+          <h3>What Maria said</h3>
+          <p class="card-meta">Review of my test plan</p>
+          <ul class="task-list">
+            <li>One task per screen, and tell people when to stop.</li>
+            <li>Give a real situation instead of saying filter. Make sure the thing you ask for actually exists.</li>
+            <li>Ask for two concrete things, like cost and time. Stop before any personal information.</li>
+          </ul>
+          <blockquote class="quote">Then basically what they're doing is they're just acting like a tester, like a QA person, rather than being themselves.<cite>Maria Rosala</cite></blockquote>
+        </article>
+      </div>
+      <p class="lead" data-reveal>So I rewrote all five as situations a student could actually be in. That version is on the next slide.</p>
+    </div>
+  </section>
+
+  <section class="slide" id="tasks" data-name="The five tasks">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>The test</p>
+      <h2 data-reveal>The five tasks</h2>
+      <div class="stepper card" id="taskStepper" tabindex="0" data-reveal>
+        <div class="stepper-tabs" role="tablist">
+          <button class="stepper-arrow" id="stepPrev" type="button" aria-label="Previous task">&#8249;</button>
+          <button class="stepper-tab active" type="button" data-index="0" role="tab" aria-selected="true">1</button>
+          <button class="stepper-tab" type="button" data-index="1" role="tab" aria-selected="false">2</button>
+          <button class="stepper-tab" type="button" data-index="2" role="tab" aria-selected="false">3</button>
+          <button class="stepper-tab" type="button" data-index="3" role="tab" aria-selected="false">4</button>
+          <button class="stepper-tab" type="button" data-index="4" role="tab" aria-selected="false">5</button>
+          <button class="stepper-arrow" id="stepNext" type="button" aria-label="Next task">&#8250;</button>
+          <span class="stepper-name" id="stepperName">Find something you'd want to learn</span>
+        </div>
+        <div class="stepper-body">
+          <div class="stepper-panel active" data-index="0">
+            <p>Think of something you've been meaning to learn. Could be for work, could be a hobby. Spend up to 5 minutes looking around Coursera for a course on it that you'd actually want to take. Once you've found one that looks right for you, stop.</p>
+          </div>
+          <div class="stepper-panel" data-index="1">
+            <p>Stay on the same topic. Imagine you're starting from scratch and you only have a few hours a week. Find a beginner level course on your topic that you could finish in a month or less. If nothing fits exactly, pick the closest thing and tell us why.</p>
+          </div>
+          <div class="stepper-panel" data-index="2">
+            <p>Find two courses on your topic that both look decent. For each one, figure out whether you'd get a certificate at the end and what it would take to earn it, like paying a fee, passing quizzes or finishing a project. Say which one is the easier path to a certificate.</p>
+          </div>
+          <div class="stepper-panel" data-index="3">
+            <p>Go with the course you like best so far. Find out what it would cost you and about how long it would take you to finish. Say both out loud.</p>
+          </div>
+          <div class="stepper-panel" data-index="4">
+            <p>Imagine you've decided to take that course. Start enrolling. Get as far as you can, but stop before it asks for any personal details or payment info.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card strip" data-reveal>
+        <p class="strip-line"><strong>After each task:</strong> On a scale of 1 to 10, how easy or difficult was that?</p>
+        <p class="strip-line"><strong>At the end:</strong> What do you think about using Coursera for this? Was anything particularly easy or difficult? Is there anything you would improve?</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="hr-intro" data-name="Heuristic review">
+    <div class="slide-inner">
+      <p class="eyebrow" data-reveal>Results &middot; part one</p>
+      <h2 data-reveal>What the heuristic review found</h2>
+      <p class="lead" data-reveal>Three issues stood out, and all three sit right on the path a student takes from a search to an enroll button. Two of them are about clutter. One is about a word Coursera uses that does not mean what students think it means.</p>
+      <div class="card-row card-row-three">
+        <a class="card toc-card" href="#hr-1" data-reveal>
+          <h3>1 &middot; Crowded search results</h3>
+          <span class="chip chip-heuristic">Aesthetic and minimalist design</span>
+        </a>
+        <a class="card toc-card" href="#hr-2" data-reveal>
+          <h3>2 &middot; AI chat covers the course page</h3>
+          <span class="chip chip-heuristic">Aesthetic and minimalist design</span>
+        </a>
+        <a class="card toc-card" href="#hr-3" data-reveal>
+          <h3>3 &middot; Enroll for free does not mean free</h3>
+          <span class="chip chip-heuristic">Match between system and real world</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="hr-1" data-name="Finding 1">
+    <div class="slide-inner">
+      <div class="finding-grid">
+        <figure class="shot-frame" data-reveal>
+          <div class="shot-bar"><span></span><span></span><span></span></div>
+          <div class="shot-img-wrap">
+            <img src="assets/hr-search.jpg" alt="Coursera search results page for data analytics">
+            <span class="callout" style="left:34%; top:48%;">1</span>
+            <span class="callout" style="left:84%; top:40%;">2</span>
+            <span class="callout" style="left:50%; top:88%;">3</span>
+          </div>
+        </figure>
+        <div class="finding-text" data-reveal>
+          <div class="chip-row">
+            <span class="chip chip-neutral">Finding 1</span>
+            <span class="chip chip-heuristic">Aesthetic and minimalist design</span>
+            <span class="chip chip-med">Medium</span>
+          </div>
+          <h2>Crowded search results</h2>
+          <p>Search for data analytics and the page shows an AI overview, recommended course cards, suggested questions, an open AI chat panel and a cookie banner, all at once. They compete for attention and push the actual results below the fold.</p>
+          <div class="card rec-card">
+            <h4>Recommendation</h4>
+            <p>Show fewer things at once. Keep the AI chat closed by default and let people open it. Make the cookie banner smaller so the results, not the banner, own the screen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="hr-2" data-name="Finding 2">
+    <div class="slide-inner">
+      <div class="finding-grid finding-grid-reverse">
+        <div class="finding-text" data-reveal>
+          <div class="chip-row">
+            <span class="chip chip-neutral">Finding 2</span>
+            <span class="chip chip-heuristic">Aesthetic and minimalist design</span>
+            <span class="chip chip-med">Medium</span>
+          </div>
+          <h2>The AI chat follows you onto the course page</h2>
+          <p>Open a course and the chat panel is still open, taking a big slice of the screen. The course information gets harder to scan, and you have to close the chat before you can read comfortably.</p>
+          <div class="card rec-card">
+            <h4>Recommendation</h4>
+            <p>Minimize the chat when a course page opens. A small Ask Coursera button is enough, and the panel expands only when someone taps it.</p>
+          </div>
+        </div>
+        <figure class="shot-frame" data-reveal>
+          <div class="shot-bar"><span></span><span></span><span></span></div>
+          <div class="shot-img-wrap">
+            <img src="assets/hr-course.jpg" alt="Coursera course page with AI chat panel open">
+            <span class="callout" style="left:80%; top:45%;">1</span>
+            <span class="callout" style="left:35%; top:60%;">2</span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="hr-3" data-name="Finding 3">
+    <div class="slide-inner">
+      <div class="finding-grid">
+        <figure class="shot-frame" data-reveal>
+          <div class="shot-bar"><span></span><span></span><span></span></div>
+          <div class="shot-img-wrap">
+            <img src="assets/shots/course-page.png" alt="Coursera course page with the Enroll for free button">
+            <span class="callout" style="left:12%; top:67%;">1</span>
+          </div>
+        </figure>
+        <div class="finding-text" data-reveal>
+          <div class="chip-row">
+            <span class="chip chip-neutral">Finding 3</span>
+            <span class="chip chip-heuristic">Match between system and real world</span>
+            <span class="chip chip-high">High</span>
+          </div>
+          <h2>Enroll for free does not mean what students think</h2>
+          <p>The button says Enroll for free. The same page says the course is included with Coursera Plus. Nowhere does it say whether the certificate is free, whether only part of the course is free, or whether a subscription will be asked for later. For a student, free means free.</p>
+          <div class="card rec-card">
+            <h4>Recommendation</h4>
+            <p>Say what free includes before asking for an account. Show the price, the trial terms and what free enrollment gets you, and change the button to something honest like Create an account to see enrollment options.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide" id="end" data-name="End">
+    <div class="slide-inner slide-inner-center">
+      <p class="eyebrow" data-reveal>Thank you</p>
+      <h2 data-reveal>Ayub Sanchez Yaqen</h2>
+      <p class="lead" data-reveal>Improving the User Experience of Digital Products<br>Build Fellowship with Maria Rosala &middot; 2026</p>
+      <button class="btn btn-primary" id="backToTopBtn" type="button" data-reveal>Back to top</button>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close glass" id="lightboxClose" type="button" aria-label="Close image">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
