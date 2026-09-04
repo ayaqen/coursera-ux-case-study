@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;}
+  body{
+    width:1440px;height:900px;overflow:hidden;background:#fff;
+    font-family:-apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  .stage{position:relative;width:1440px;height:900px;overflow:hidden;background:#fff;}
+  .bg{position:absolute;top:0;left:0;width:1440px;height:900px;display:block;}
+
+  /* Cover the whole former chat-panel column (x 1024 to 1440) with
+     bands that continue the page's own background at each row. */
+  .cover{
+    position:absolute;
+    top:0;left:1024px;width:416px;height:900px;
+  }
+  .band{position:absolute;left:0;width:416px;}
+  .band-black{top:0;height:40px;background:#0d0f12;}
+  .band-header{top:40px;height:109px;background:#ffffff;}
+  .band-navy{top:149px;height:48px;background:#002761;}
+  .band-blue{top:197px;height:610px;background:#f2f6fd;}
+  .band-white{top:807px;height:93px;background:#ffffff;}
+
+  .ask-pill{
+    position:absolute;
+    right:28px;
+    bottom:28px;
+    background:#ffffff;
+    border:1px solid #0056d2;
+    border-radius:999px;
+    padding:10px 18px;
+    font-size:15px;
+    font-weight:600;
+    color:#0056d2;
+    box-shadow:0 4px 14px rgba(0,0,0,0.15);
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <img class="bg" src="../assets/shots/course-page.png">
+
+    <div class="cover">
+      <div class="band band-black"></div>
+      <div class="band band-header"></div>
+      <div class="band band-navy"></div>
+      <div class="band band-blue"></div>
+      <div class="band band-white"></div>
+    </div>
+
+    <div class="ask-pill">&#10022; Ask Coursera</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;}
+  body{
+    width:1440px;height:900px;overflow:hidden;background:#fff;
+    font-family:-apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  .stage{position:relative;width:1440px;height:900px;overflow:hidden;background:#fff;}
+  .bg{position:absolute;top:0;left:0;width:2109.89px;height:auto;display:block;}
+
+  .ai-cover{
+    position:absolute;
+    top:270px;left:0;width:1440px;height:70px;
+    background:#ffffff;
+    z-index:1;
+  }
+  .ai-cover .line{
+    padding:16px 0 0 60px;
+    font-size:17px;
+    line-height:1.5;
+    color:#1f1f1f;
+  }
+  .ai-cover .showmore{
+    color:#0056d2;
+    font-weight:600;
+    margin-left:6px;
+    cursor:pointer;
+  }
+
+  .bg-lower{
+    position:absolute;
+    top:340px;left:0;width:1440px;height:560px;
+    overflow:hidden;
+    z-index:2;
+    background:#ffffff;
+  }
+  .bg-lower img{
+    position:absolute;
+    top:-495.82px;left:0;width:2109.89px;height:auto;display:block;
+  }
+
+  .cookie-bar{
+    position:absolute;
+    left:0;bottom:0;width:1440px;height:48px;
+    background:#ffffff;
+    border-top:1px solid #d9dde3;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 24px;
+    box-sizing:border-box;
+    z-index:10;
+  }
+  .cookie-bar .msg{
+    font-size:14px;
+    color:#333333;
+  }
+  .cookie-bar .btns{
+    display:flex;
+    gap:12px;
+  }
+  .pill-btn{
+    height:32px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0 18px;
+    box-sizing:border-box;
+    white-space:nowrap;
+  }
+  .pill-reject{
+    background:#ffffff;
+    border:1px solid #0056d2;
+    color:#0056d2;
+  }
+  .pill-accept{
+    background:#0056d2;
+    border:1px solid #0056d2;
+    color:#ffffff;
+  }
+
+  .ask-pill{
+    position:absolute;
+    right:24px;
+    bottom:72px;
+    background:#ffffff;
+    border:1px solid #0056d2;
+    border-radius:999px;
+    padding:10px 18px;
+    font-size:15px;
+    font-weight:600;
+    color:#0056d2;
+    box-shadow:0 4px 14px rgba(0,0,0,0.15);
+    z-index:10;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <img class="bg" src="../assets/hr-search.jpg">
+
+    <div class="ai-cover">
+      <div class="line">To start with data analytics, build core skills like data storytelling, data wrangling and visualization.<span class="showmore">Show more</span></div>
+    </div>
+
+    <div class="bg-lower">
+      <img src="../assets/hr-search.jpg">
+    </div>
+
+    <div class="cookie-bar">
+      <div class="msg">We use cookies to measure and improve the site.</div>
+      <div class="btns">
+        <div class="pill-btn pill-reject">Reject</div>
+        <div class="pill-btn pill-accept">Accept</div>
+      </div>
+    </div>
+
+    <div class="ask-pill">&#10022; Ask Coursera</div>
+  </div>
+</body>
+</html>

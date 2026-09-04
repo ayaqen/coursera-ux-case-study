@@ -7,7 +7,6 @@
   var total = slides.length;
   var currentIndex = 0;
 
-  var dotNav = document.getElementById("dotNav");
   var counterEl = document.getElementById("counter");
   var nextBtn = document.getElementById("nextBtn");
   var brandBtn = document.getElementById("brandBtn");
@@ -26,26 +25,9 @@
     slides[i].scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  // dot navigation, built from the DOM
-  var dots = slides.map(function(slide, i){
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "dot";
-    var name = slide.getAttribute("data-name") || slide.id;
-    btn.setAttribute("aria-label", "Go to " + name);
-    var label = document.createElement("span");
-    label.className = "dot-label glass";
-    label.textContent = name;
-    btn.appendChild(label);
-    btn.addEventListener("click", function(){ goToSlide(i); });
-    dotNav.appendChild(btn);
-    return btn;
-  });
-
   function updateChrome(){
-    dots.forEach(function(d, i){ d.classList.toggle("active", i === currentIndex); });
     counterEl.textContent = pad(currentIndex + 1) + " / " + pad(total);
-    nextBtn.textContent = (currentIndex === total - 1) ? "Back to top ↑" : "Next ↓";
+    nextBtn.textContent = (currentIndex === total - 1) ? "Back to top" : "Next";
   }
 
   var slideObserver = new IntersectionObserver(function(entries){
@@ -71,13 +53,8 @@
   brandBtn.addEventListener("click", function(){ goToSlide(0); });
 
   var startBtn = document.getElementById("startBtn");
-  var jumpBtn = document.getElementById("jumpBtn");
   var backToTopBtn = document.getElementById("backToTopBtn");
   if(startBtn) startBtn.addEventListener("click", function(){ goToSlide(1); });
-  if(jumpBtn) jumpBtn.addEventListener("click", function(){
-    var target = document.getElementById("hr-1");
-    if(target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
   if(backToTopBtn) backToTopBtn.addEventListener("click", function(){ goToSlide(0); });
 
   // keyboard navigation between slides
@@ -213,14 +190,39 @@
     document.body.style.overflow = "";
   }
   document.querySelectorAll(".shot-frame").forEach(function(frame){
-    var img = frame.querySelector("img");
-    if(!img) return;
-    frame.addEventListener("click", function(){ openLightbox(img); });
+    function currentImg(){
+      if(frame.classList.contains("show-after")){
+        return frame.querySelector("img.shot-after") || frame.querySelector("img");
+      }
+      return frame.querySelector("img.shot-before") || frame.querySelector("img");
+    }
+    frame.addEventListener("click", function(){
+      var img = currentImg();
+      if(img) openLightbox(img);
+    });
     frame.addEventListener("keydown", function(e){
       if(e.key === "Enter" || e.key === " "){
         e.preventDefault();
-        openLightbox(img);
+        var img = currentImg();
+        if(img) openLightbox(img);
       }
+    });
+  });
+
+  // before / after toggle on finding slides
+  document.querySelectorAll(".ba-toggle").forEach(function(toggle){
+    var slide = toggle.closest(".slide");
+    var frame = slide ? slide.querySelector(".shot-frame") : null;
+    var buttons = Array.prototype.slice.call(toggle.querySelectorAll(".ba-btn"));
+    buttons.forEach(function(btn){
+      btn.addEventListener("click", function(){
+        buttons.forEach(function(b){
+          var active = b === btn;
+          b.classList.toggle("active", active);
+          b.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        if(frame){ frame.classList.toggle("show-after", btn.getAttribute("data-state") === "after"); }
+      });
     });
   });
   lightboxClose.addEventListener("click", closeLightbox);
