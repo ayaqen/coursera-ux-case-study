@@ -443,7 +443,6 @@ p:last-child{ margin-bottom: 0; }
   margin-bottom: 0.8rem;
 }
 
-.toc-card{ cursor: pointer; }
 .toc-card h3{ margin-bottom: 1rem; }
 
 .rec-card{
@@ -726,3 +725,13 @@ p:last-child{ margin-bottom: 0; }
 .task-why strong{ color: #1e2a38; }
 
 .slide{ padding-top: max(6vh, 6.5rem); }
+
+.chip-row{ gap: 0.9rem; align-items: center; }
+.finding-meta{ font-size: 0.95rem; color: #46586b; }
+.toc-card .card-meta{ margin-bottom: 0.9rem; }
+.strip .task-list{ margin-bottom: 0.9rem; }
+
+h2{ font-size: clamp(1.9rem, 3.6vw, 2.9rem); }
+.finding-grid p, .finding-grid .card p{ font-size: 1.12rem; line-height: 1.5; }
+.finding-grid .card{ padding: 1.5rem 1.7rem; }
+.slide{ padding-top: max(6vh, 6rem); }
