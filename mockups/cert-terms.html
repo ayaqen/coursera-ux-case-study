@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 900px;
+    overflow: hidden;
+    background: #ffffff;
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+
+  .panel {
+    position: absolute;
+    top: 0;
+    width: 700px;
+    height: 900px;
+    background: #ffffff;
+  }
+  .panel-left { left: 0; }
+  .panel-right { left: 740px; }
+
+  .divider {
+    position: absolute;
+    left: 719px;
+    top: 0;
+    width: 1px;
+    height: 900px;
+    background: #e3e7ee;
+  }
+
+  .panel-label {
+    position: absolute;
+    top: 28px;
+    left: 40px;
+    font-size: 14px;
+    color: #555555;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* LEFT PANEL: result card */
+  .card-frame {
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    width: 500px;
+    border: 1px solid #c1cbdb;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .card-frame img {
+    display: block;
+    width: 500px;
+  }
+  .card-frame .card-body {
+    padding: 14px 24px 20px;
+  }
+  .cert-note {
+    background: #e8f1ff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #0b4aa8;
+    font-weight: 500;
+  }
+
+  /* RIGHT PANEL: course page certificate block */
+  .cert-frame {
+    position: absolute;
+    left: 20px;
+    top: 84px;
+    width: 660px;
+    height: 176px;
+  }
+  .cert-frame img {
+    display: block;
+    width: 660px;
+    height: 176px;
+  }
+  .terms-box {
+    position: absolute;
+    left: 20px;
+    top: 284px;
+    width: 660px;
+    background: #ffffff;
+    border: 1px solid #d7dee8;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(15, 30, 60, 0.06);
+    padding: 22px 26px 24px;
+  }
+  .terms-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 12px;
+  }
+  .term-line {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1f1f1f;
+    margin-bottom: 4px;
+  }
+  .term-line:last-child { margin-bottom: 0; }
+  .check {
+    color: #0b4aa8;
+    font-weight: 700;
+    flex: 0 0 auto;
+  }
+</style>
+</head>
+<body>
+
+  <div class="panel panel-left">
+    <div class="panel-label">Result card</div>
+    <div class="card-frame">
+      <img src="cert-terms-assets/ibm-card-top.png" alt="IBM Introduction to Data Analytics result card">
+      <div class="card-body">
+        <div class="cert-note">Certificate: $49/mo after 7-day trial &middot; graded quizzes &middot; or Coursera Plus</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="panel panel-right">
+    <div class="panel-label">Course page</div>
+    <div class="cert-frame">
+      <img src="cert-terms-assets/cert-block.png" alt="Earn a career certificate block">
+    </div>
+    <div class="terms-box">
+      <div class="terms-title">Certificate terms</div>
+      <div class="term-line"><span class="check">&#10003;</span><span>Graded quizzes in each module and a final project</span></div>
+      <div class="term-line"><span class="check">&#10003;</span><span>$49 a month after a 7-day free trial, or included with Coursera Plus</span></div>
+      <div class="term-line"><span class="check">&#10003;</span><span>Audit for free without a certificate</span></div>
+    </div>
+  </div>
+
+</body>
+</html>

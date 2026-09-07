@@ -29,20 +29,6 @@
     <p class="subtitle">A heuristic review and a usability test of coursera.org</p>
     <p class="byline"><strong>Ayub Sanchez Yaqen</strong> &middot; Build Fellowship, Improving the User Experience of Digital Products &middot; September 2026</p>
 
-    <div class="gap">
-      <div class="gap-side gap-said">
-        <span class="gap-label">What both participants said the course would cost</span>
-        <span class="gap-num">$0</span>
-        <span class="gap-note">"It says that it's free. I think that's how much it would cost. So nothing."</span>
-      </div>
-      <span class="gap-vs">vs</span>
-      <div class="gap-side gap-charged">
-        <span class="gap-label">What Coursera charges</span>
-        <span class="gap-num">$49<small>/month</small></span>
-        <span class="gap-note">After a 7-day trial, for the Google certificate. Stated only in the FAQ, far down the page.</span>
-      </div>
-    </div>
-
     <dl class="snapshot">
       <div><dt>Product</dt><dd>coursera.org, from the search box to the enroll button</dd></div>
       <div><dt>My role</dt><dd>Solo researcher: heuristic review, task design, recruiting, unmoderated test, synthesis, mockups</dd></div>
@@ -54,23 +40,25 @@
   </header>
 
   <section id="why">
-    <h2>I picked Coursera because a confusing page here costs students real money</h2>
-    <p>When a skill I need is not covered in my classes, Coursera is where I end up. That is why I chose it: I know the product as a user, and I know that the choices you make on it cost money and time. A confusing page on a news site wastes a minute. A confusing page on Coursera can cost someone a subscription they did not mean to buy.</p>
+    <h2>Coursera sells learning, and the price is what worried me going in</h2>
     <p><strong>What Coursera does.</strong> It hosts online courses, Specializations, Professional Certificates and degrees from universities and companies like Google and IBM. People search for a topic, compare options and enroll. Watching the videos is often free. Certificates usually cost money, either per course or through a Coursera Plus subscription ($59 a month at list price, $399 a year).</p>
     <figure class="wide">
       <img src="assets/figures/pricing.png" alt="Coursera Plus pricing page with three plans" loading="lazy">
       <figcaption>The prices live on their own page, not on the course page. Individual courses run $49 to $79 a month; Coursera Plus lists at $59 a month, shown here on a promotion.</figcaption>
     </figure>
     <p><strong>Who uses it.</strong> Students, career changers, and employees whose company pays. I focused on students who want a career-related skill, because that is who I am and who I could reach.</p>
+    <p><strong>Why I chose it, and what worried me going in.</strong> When a skill I need is not covered in my classes, Coursera is where I end up, so I know the product as a user. What concerned me before I started was the price. Every course page leads with a blue Enroll for free button, but certificates cost money and the subscription costs $59 a month at list price. I wanted to know whether people can tell what they will actually pay before they hand over an email address. A confusing page on a news site wastes a minute. A confusing page on Coursera can cost someone a subscription they did not mean to buy.</p>
     <p><strong>What Coursera needs.</strong> It earns when someone enrolls and pays. One Google certificate alone shows 3.8 million people enrolled. Every step where a learner cannot tell what is free, what costs money, or which product is which is a step where Coursera either loses the sale or wins it and loses the trust.</p>
   </section>
 
   <section id="questions">
-    <h2>What I wanted to learn: three questions on the path from a search to an enroll button</h2>
+    <h2>What I wanted to learn: five questions on the path from a search to an enroll button</h2>
     <ol class="questions">
       <li>Can a learner find a beginner-friendly course on a topic they actually want to learn?</li>
       <li>Do they understand the difference between a standalone course, a Specialization and a Professional Certificate?</li>
       <li>How easy is it to filter, compare, check the cost and time, and start enrolling?</li>
+      <li>Do people realize how much courses on Coursera cost?</li>
+      <li>Are people surprised when they go to enroll and find they have to pay a monthly fee?</li>
     </ol>
     <p>These are the steps between a person and actually learning something. When they break, the person gives up or pays for the wrong thing. Both are bad for the learner and bad for Coursera.</p>
     <figure class="wide">
@@ -80,14 +68,14 @@
   </section>
 
   <section id="methods">
-    <h2>Methods: a heuristic review to find likely problems, then real people to see which ones actually bite</h2>
+    <h2>Methods: heuristic review to find problems; usability testing to learn how severe they are</h2>
     <figure class="wide">
       <img src="assets/figures/process.png" alt="Six step timeline from heuristic review to findings and mockups" loading="lazy">
-      <figcaption>How the study ran. The rewrite in step 4 is what made step 5 worth watching.</figcaption>
+      <figcaption>How the project ran. The study itself was the unmoderated test in step 5; the rewrite in step 4 is what made it worth watching.</figcaption>
     </figure>
     <p><strong>Heuristic review (August 2026).</strong> I walked through coursera.org the way a student would: searched "data analytics", opened course pages, and tried to enroll. At each step I checked the screen against Nielsen's ten usability heuristics and noted where it broke one. It is fast and cheap, but it is one person's opinion, so I treated the results as candidates to test rather than conclusions.</p>
     <p><strong>Unmoderated usability test.</strong> I wanted real people going through the design, not me and not an AI, and I wanted them doing it on their own time with nobody in the room nudging them. Participants opened coursera.org on their own computer, worked through five tasks while thinking aloud, and were asked to rate each task from 1 to 10 and answer four questions at the end. Sessions ran on Lookback.</p>
-    <p><strong>Participants.</strong> I recruited through classmates, friends and university contacts. The screening criteria were: a current student or someone recently in college, has searched for a class or learning resource online before, and wants to learn a new skill for school, work or career. The people who could take part in the time were university researchers with a concrete skill they wanted to learn: one wanted an introductory course on single-cell RNA sequencing, one wanted the basics of the R programming language. They are not undergraduates, and I come back to that in the reflections, but they were exactly the kind of learner the tasks were written for: someone with a real need, a limited number of hours, and a decision to make.</p>
+    <p><strong>Participants.</strong> I recruited through classmates, friends and university contacts, looking for people who had searched for a class online before and had a concrete skill they wanted to learn. Two university researchers were willing to take the test: one wanted an introductory course on single-cell RNA sequencing, one wanted the basics of the R programming language. Each had a real need, a limited number of hours, and a decision to make. In future it would be interesting to test with undergraduates to see whether their behavior and needs differ.</p>
 
     <h3>The tasks changed after review, and that mattered</h3>
     <p>My first task list was five lines on one screen: search for a topic, filter results, compare course and certificate options, review the cost and time, begin enrollment. The instructor's feedback was that this turns a participant into a QA tester ticking boxes instead of being themselves, that every task needs a stopping point, and that nobody should be asked to enter personal information. So I rewrote all five as situations:</p>
@@ -106,24 +94,24 @@
   </section>
 
   <section id="heuristics">
-    <h2>Results from the heuristic review: three issues, and the biggest one is a single word</h2>
+    <h2>What I learned from the heuristic review</h2>
 
-    <h3><span class="chip chip-med">Medium</span> 1. The search page shows five things at once, and the courses lose</h3>
-    <p><em>Aesthetic and minimalist design.</em> Searching "data analytics" produced an AI overview, recommended cards, suggested questions, an open AI chat panel and a cookie banner, all at the same time. The actual results sat below the fold.</p>
+    <h3><span class="chip chip-med">Medium</span> 1. The search page shows five things at once, and the courses lose priority</h3>
+    <p><em>Heuristic: Aesthetic and minimalist design.</em> Searching "data analytics" produced an AI overview, recommended cards, suggested questions, an open AI chat panel and a cookie banner, all at the same time. The actual results sat below the fold.</p>
     <figure class="wide">
       <img src="assets/figures/search-annot.png" alt="Coursera search results for data analytics with five numbered callouts" loading="lazy">
       <figcaption>The search results page for "data analytics" with the five things competing for the first screen.</figcaption>
     </figure>
 
-    <h3><span class="chip chip-med">Medium</span> 2. The AI chat stays open on the course page and hides a third of it</h3>
-    <p><em>Aesthetic and minimalist design.</em> Open a course and the chat panel is still open. You have to close it before you can read the course comfortably, and nobody asked for it.</p>
+    <h3><span class="chip chip-med">Medium</span> 2. The AI chat stays open on the course page and hides a third of the page</h3>
+    <p><em>Heuristic: Aesthetic and minimalist design.</em> When a user opens a course page, the chat panel remains open. You have to close it in order to see the page in full view.</p>
     <figure class="wide">
       <img src="assets/figures/course-chat.png" alt="Course page with the AI chat panel highlighted" loading="lazy">
       <figcaption>The Google Data Analytics course page as it opens from search, chat panel still expanded.</figcaption>
     </figure>
 
     <h3><span class="chip chip-high">High</span> 3. "Enroll for free" does not mean free</h3>
-    <p><em>Match between system and the real world.</em> The button says Enroll for free. The same page says the course is included with Coursera Plus. Nowhere on the page does it say whether the certificate is free, whether only part of the course is free, or whether a subscription will be asked for later. The price ($49 a month after a 7-day trial, for the Google certificate) only appears in the FAQ far down the page. For a student, free means free. I ranked this highest because it touches trust and revenue, not comfort.</p>
+    <p><em>Heuristic: Match between system and the real world.</em> The button says Enroll for free. The same page says the course is included with Coursera Plus. Nowhere on the page does it say whether the certificate is free, whether only part of the course is free, or whether a subscription will be asked for later. The price ($49 a month after a 7-day trial, for the Google certificate) only appears in the FAQ far down the page. For a student, free means free. I ranked this highest because it touches trust and revenue, not comfort.</p>
     <figure class="wide">
       <img src="assets/figures/enroll-annot.png" alt="Course page with the Enroll for free button and the Coursera Plus line boxed in red" loading="lazy">
       <figcaption>The button says free. The line under it says subscription. Neither says what the certificate costs.</figcaption>
@@ -131,7 +119,7 @@
   </section>
 
   <section id="test">
-    <h2>Results from the usability test: the free-that-isn't-free problem hit everyone, and the clutter hit no one</h2>
+    <h2>What I learned from the usability test</h2>
 
     <h3><span class="chip chip-high">High</span> Finding 1: people believe the course is free right up to the paywall, because the button told them so</h3>
     <p>Both participants answered Task 4 by saying the course cost nothing. One said:</p>
@@ -141,6 +129,21 @@
     <p>The difference between them was how far they got in Task 5. One reached the paywall:</p>
     <blockquote><span>Oh, is this try free? Is it not actually free? Oh, I can't enroll because it's not actually free. I don't want to give them my payment information.</span><cite>Participant 1, Task 5</cite></blockquote>
     <p>The other stopped at the login modal, as instructed, and left the session still believing the course was free.</p>
+
+    <div class="gap">
+      <div class="gap-side gap-said">
+        <span class="gap-label">What both participants said the course would cost</span>
+        <span class="gap-num">$0</span>
+        <span class="gap-note">"It says that it's free. I think that's how much it would cost. So nothing."</span>
+      </div>
+      <span class="gap-vs">vs</span>
+      <div class="gap-side gap-charged">
+        <span class="gap-label">What Coursera charges</span>
+        <span class="gap-num">$49<small>/month</small></span>
+        <span class="gap-note">After a 7-day trial, for the Google certificate. Stated only in the FAQ, far down the page.</span>
+      </div>
+    </div>
+
     <figure class="wide">
       <img src="assets/figures/modal.png" alt="Log in or create account modal over the course page" loading="lazy">
       <figcaption>Clicking Enroll for free opens an account modal. The price has still not appeared.</figcaption>
@@ -186,7 +189,7 @@
       <p>Someone who enrolls in the wrong level drops out, and a dropped course is a cancelled subscription.</p>
     </aside>
 
-    <h3><span class="chip chip-info">Surprise</span> Something I did not expect: trust comes from reviews and brand names, and nothing else</h3>
+    <h3><span class="chip chip-info">Surprise</span> Something I did not expect: trust comes from reviews and brand names</h3>
     <p>Both participants decided between courses using the review score, the review count and the institution.</p>
     <div class="quote-grid">
       <blockquote><span>It has higher reviews.</span></blockquote>
@@ -200,8 +203,8 @@
       <figcaption>Result cards for "data analytics". Institution and rating did the choosing; the product type in small grey text did not.</figcaption>
     </figure>
     <aside class="why why-info">
-      <span class="why-label">And something the heuristic review got wrong</span>
-      <p>Neither participant mentioned the AI chat panel or the cookie banner. The clutter I flagged as two of my three issues did not slow anyone down. What hurt was information that was missing, not information that was in the way.</p>
+      <span class="why-label">And something that was not an issue for these two participants</span>
+      <p>Neither participant mentioned the AI chat panel or the cookie banner, and neither talked about closing them. The clutter I flagged as two of my three issues did not slow these two people down. What hurt was information that was missing, not information that was in the way.</p>
     </aside>
 
     <div class="table-wrap">
@@ -236,13 +239,17 @@
     </figure>
 
     <h3><span class="chip chip-high">High</span> 2. Put the certificate terms in one block on the course page, and repeat them on the result cards</h3>
-    <p>"Certificate: graded quizzes in each module and a final project. $49 a month or included with Coursera Plus. Audit for free without a certificate." Two courses side by side would then differ on the thing that matters, and Task 3 would take thirty seconds instead of ending in "they're both equal."</p>
+    <p>On the course page, one block next to the enroll button that states the certificate terms in full: "Certificate: graded quizzes in each module and a final project. $49 a month or included with Coursera Plus. Audit for free without a certificate." On the search results page, one short line on each result card with the same facts, so two courses can be compared before either page is opened. The mockup below shows both places.</p>
+    <figure class="wide">
+      <img src="assets/figures/cert-terms-mockup.png" alt="Mockup: a result card with a certificate line added, and the course page certificate block with price and requirements spelled out" loading="lazy">
+      <figcaption>Left, a result card with the certificate line. Right, the certificate block on the course page with the price and the requirements spelled out.</figcaption>
+    </figure>
 
     <h3><span class="chip chip-med">Medium</span> 3. Make level and topic findable without knowing the taxonomy</h3>
     <p>When a search has no beginner results, say so and offer the closest beginner match instead of silently showing intermediate courses. Label topic filters in the words people search with, and collapse a course that appears in several programs into one result.</p>
 
     <h3><span class="chip chip-low">Low</span> 4. Show search results first, everything else on request</h3>
-    <p>Keep the AI chat closed behind a small Ask Coursera pill, collapse the AI overview to one sentence with a Show more, and shrink the cookie banner to a single line. I mocked both the search page and the course page this way. This is the lowest priority of the four: it makes the page nicer, but the test showed it is not what stops people.</p>
+    <p>Keep the AI chat closed behind a small Ask Coursera pill, collapse the AI overview to one sentence with a Show more, and shrink the cookie banner to a single line. I mocked both the search page and the course page this way. This is the lowest priority of the four: it makes the page nicer, but the test showed it is not what stops people. The trade-off is discoverability: a pill in the bottom corner is easier to miss than an open panel. To keep it noticeable, the AI sparkle in the pill could animate briefly when someone lands on the page, a small pulse that says the chat is there without taking any space.</p>
     <figure class="wide ba" data-ba>
       <div class="ba-toggle" role="group" aria-label="Before and after">
         <button type="button" class="ba-btn is-active" data-state="before" aria-pressed="true">Before</button>
@@ -270,7 +277,7 @@
   <section id="reflections">
     <h2>Reflections: what I would do differently</h2>
     <p><strong>Recruit earlier and closer to the target.</strong> I wrote the study for college students and ended up testing researchers, because they were the people who said yes before the deadline. Their sessions were rich, and the money problem is the same for anyone, but I cannot claim these findings speak for undergraduates. Next time I would start recruiting through student groups in week one, not week six.</p>
-    <p><strong>The task rewrite was the most important decision in the project.</strong> My first list would have produced five checkbox confirmations. The rewritten Task 4 made people say the price out loud, and Task 5 walked them to the paywall. The gap between what people believed ("nothing") and what Coursera charges only became visible because the tasks forced a statement and then a confrontation.</p>
+    <p><strong>Rewriting the tasks was the most important decision I made.</strong> My first list would have produced five checkbox confirmations. When I rewrote Task 4, people had to say the price out loud, and Task 5 walked them to the paywall. I only saw the gap between what people believed ("nothing") and what Coursera charges because my tasks forced a statement and then a confrontation.</p>
     <p><strong>Get the numbers into the tool.</strong> I planned a 1-to-10 rating after each task and four questions at the end. What came back was the think-aloud recordings, and the ratings and answers did not come through in a form I could use. So the findings here rest on what people said and did rather than on scores. Next time I would build the rating into the task flow itself and check the first session's export before running the rest.</p>
     <p><strong>Test the tool as well as the site.</strong> The first thing one participant said was that she could not get back to the scenario once the task had started. Tasks need to be short enough to hold in your head, or the key constraint has to sit in the task title.</p>
     <p><strong>Point the heuristic review at the money.</strong> I spent my review time on the whole site and came out with two clutter issues and one wording issue. The test showed the wording issue was the one that mattered. If I did this again I would spend the heuristic review on the path from price to enrollment and leave the cosmetics for later.</p>
