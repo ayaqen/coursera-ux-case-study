@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OG Image</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+  }
+  body {
+    position: relative;
+    background:
+      linear-gradient(135deg, rgba(238,244,255,0) 40%, #eef4ff 100%),
+      #ffffff;
+    font-family: -apple-system, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  }
+  .topbar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: #0056d2;
+  }
+
+  /* LEFT COLUMN */
+  .left {
+    position: absolute;
+    top: 0;
+    left: 64px;
+    width: 636px; /* 700 - 64 */
+    height: 630px;
+  }
+  .brand-row {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .brand-row .logo {
+    width: 56px;
+    height: 56px;
+    flex: none;
+    display: block;
+  }
+  .brand-row .eyebrow {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0b4aa8;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .title {
+    position: absolute;
+    top: 148px;
+    left: 0;
+    width: 600px;
+    font-size: 54px;
+    font-weight: 800;
+    color: #0f1c2e;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .subtitle {
+    position: absolute;
+    top: 388px;
+    left: 0;
+    width: 560px;
+    font-size: 22px;
+    color: #46586b;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .byline {
+    position: absolute;
+    top: 558px;
+    left: 0;
+    font-size: 20px;
+    color: #0f1c2e;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .byline .sep {
+    color: #46586b;
+    font-weight: 400;
+  }
+
+  /* RIGHT COLUMN CARD */
+  .card {
+    position: absolute;
+    top: 65px;
+    left: 760px;
+    width: 376px; /* 1136 - 760 */
+    height: 500px;
+    background: #ffffff;
+    border: 1px solid #d9e2ef;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(15,28,46,0.10);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #46586b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 6px;
+  }
+  .big-num {
+    font-size: 72px;
+    font-weight: 800;
+    color: #0056d2;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+  .big-num.red {
+    color: #b42318;
+  }
+  .big-num .unit {
+    font-size: 24px;
+    font-weight: 600;
+    color: #b42318;
+  }
+  .quote {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 17px;
+    color: #1e2a38;
+    line-height: 1.45;
+    margin: 0 0 18px;
+    max-width: 300px;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #d9e2ef;
+    margin: 4px 0 10px;
+  }
+  .vs {
+    font-size: 14px;
+    color: #9aa8b8;
+    margin: 0 0 18px;
+    text-align: center;
+  }
+  .note {
+    font-size: 15px;
+    color: #46586b;
+    margin: 10px 0 0;
+    max-width: 300px;
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+  <div class="topbar"></div>
+
+  <div class="left">
+    <div class="brand-row">
+      <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0056d2"/>
+            <stop offset="1" stop-color="#2f7bff"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="64" height="64" rx="14" fill="url(#mark)"/>
+        <circle cx="27" cy="27" r="15" fill="none" stroke="#ffffff" stroke-width="4.5"/>
+        <path d="M15 27 Q27 15 39 27 Q27 39 15 27 Z" fill="#ffffff"/>
+        <circle cx="27" cy="27" r="5" fill="#0056d2"/>
+        <circle cx="29" cy="25" r="1.6" fill="#ffffff"/>
+        <line x1="38.5" y1="38.5" x2="52" y2="52" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round"/>
+      </svg>
+      <div class="eyebrow">UX research case study</div>
+    </div>
+
+    <h1 class="title">Finding a course on Coursera should be easy. Is it?</h1>
+
+    <p class="subtitle">A heuristic review and an unmoderated usability test of coursera.org. Two participants, five tasks, one word that does not mean what people think.</p>
+
+    <div class="byline">Ayub Sanchez Yaqen<span class="sep"> &middot; ayaqen.github.io/coursera-ux-case-study</span></div>
+  </div>
+
+  <div class="card">
+    <div class="label">What participants said the course would cost</div>
+    <div class="big-num">$0</div>
+    <p class="quote">&ldquo;It says that it's free. I think that's how much it would cost. So nothing.&rdquo;</p>
+    <div class="divider"></div>
+    <div class="vs">vs</div>
+    <div class="label">What Coursera charges</div>
+    <div class="big-num red">$49<span class="unit">/month</span></div>
+    <p class="note">After a 7-day trial. Stated only in the FAQ, far down the page.</p>
+  </div>
+</body>
+</html>
