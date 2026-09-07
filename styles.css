@@ -176,3 +176,8 @@ td{ padding: 0.65rem 0.6rem; border-bottom: 1px solid var(--rule); vertical-alig
 .lightbox[hidden]{ display: none; }
 .lightbox img{ max-width: 100%; max-height: 100%; width: auto; border-radius: 6px; background: #fff; }
 .lightbox-close{ position: absolute; top: 1rem; right: 1rem; width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 0; background: #fff; color: var(--ink); font-size: 1.5rem; line-height: 1; cursor: pointer; }
+
+.refs-sig .social{ display: inline-flex; align-items: center; gap: 0.7rem; margin-left: 0.6rem; vertical-align: middle; }
+.refs-sig .social a{ display: inline-flex; color: var(--muted); }
+.refs-sig .social a:hover{ color: #0056d2; }
+.refs-sig .social svg{ width: 20px; height: 20px; fill: currentColor; }
